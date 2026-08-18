@@ -46,3 +46,11 @@ window.onscroll = _=>{
         upBtn.style.right = ""
     }
 }
+// Scroller Section
+let theScroller = document.querySelector(".scroller");
+let theHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight ;
+
+window.addEventListener("scroll",_=>{
+    let scrollVal = document.documentElement.scrollTop;
+    theScroller.style.width = `${(scrollVal/theHeight)*100}%`
+});
