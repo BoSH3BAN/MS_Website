@@ -56,6 +56,17 @@ a{
 }
 
 /* End Global Rules */
+/* Start Scroller Section */
+.scroller{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: var(--main-color);
+    z-index: 100;
+}
+/* End Scroller Section */
 /* Start components */
 .main-title{
     margin: 0 auto 80px;
